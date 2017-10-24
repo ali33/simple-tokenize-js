@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="simple-tokenize.js"></script>
+</head>
+<body>
+    <script>
+        var str = 'this is text. This is next text <a href="https://google.com">click here to goto google.com</a>';
+        var seps = [' ', '.', '"', '<', '>','/','=','\'','\n'];
+        var result = tokenize(str, seps);
+        console.log(result);
+    </script>
+</body>
+</html>
